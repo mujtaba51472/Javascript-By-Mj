@@ -1,5 +1,5 @@
 
-# Define Vs not define Vs  undefined 
+#  <u>Define Vs not define Vs undefined</u>
 ---
 
 <p>
@@ -51,7 +51,7 @@ console.log(y); // Output: undefined
 ```
 ---
 
-# Hoisting In js
+# <u>Hoisting In js</u>
 
 <p>
 
