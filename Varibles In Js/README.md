@@ -77,6 +77,21 @@ ptint();
  `assignment or initialization ` are not moved to the top so accessing them before assignment or initialization it will give error
  `name` is  not `defined` and `age` will  give `Ref error` (as varible declartion with let and const are not completly hosited)
 
+ #### Using hoisting
+
+  ```javascript
+ function print() {
+     name = 'mujtaba';
+    console.log(name);    // here name is defined  as  var name will be hosited and can be access
+    var name ;
+
+
+    
+}
+ptint();
+ ```
+
+
 </p>
 
 
