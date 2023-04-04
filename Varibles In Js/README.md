@@ -51,6 +51,32 @@ console.log(y); // Output: undefined
 ```
 ---
 
+# Hoisting In js
+
+<p>
+`Definition` :
+Hoisting in JavaScript is a mechanism where `variable and function declarations` are moved to `the top of their respective scopes` during the compilation phase. This means that it is possible to use a variable or function before it has been `declared`, and the code will still run without any errors.
+ However, it's important to note that only the declaration of the variable or function is hoisted to the top of the scope, not the assignment or initialization of the variable or function.
+ #### Example
+ ```javascript
+ function print() {
+  console.log(name);
+  console.log(age);
+  var name = 'mujtaba';
+  let age = 21;
+}
+
+ptint();
+ ```
+ In the above example , name and age are moved to the top once they are declared but point to be noted 
+ `assignment or initialization ` are not moved to the top so accessing them before assignment or initialization it will give error
+ `name` is  not `defined` and `age` will  give `Ref error` (as varible declartion with let and const are not completly hosited)
+
+</p>
+
+
+
+
 
 
 
