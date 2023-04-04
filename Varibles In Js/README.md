@@ -1,4 +1,7 @@
-# Define Vs not define Vs  undefined 
+
+#  <u>Define Vs not define Vs undefined</u>
+---
+
 <p>
 
 ## Define
@@ -47,6 +50,52 @@ var y;
 console.log(y); // Output: undefined
 ```
 ---
+
+# <u>Hoisting In js</u>
+
+<p>
+
+#### Definittion
+
+Hoisting in JavaScript is a mechanism where `variable and function declarations` are moved to `the top of their respective scopes` during the compilation phase. This means that it is possible to use a variable or function before it has been `declared`, and the code will still run without any errors.
+
+ However, it's important to note that only the declaration of the variable or function is hoisted to the top of the scope, not the assignment or initialization of the variable or function.
+ This behavior is caused by how JavaScript is interpreted and compiled by the browser or runtime environment. When JavaScript code is executed, the engine first compiles the code and creates an execution context. During this compilation phase, the engine scans the code for variable and function declarations and moves them to the top of their respective scope
+ #### Example
+
+ ```javascript
+ function print() {
+  // console.log(name);  //name is not defined cause we cannot used varible before  assignment or initialization   but we can before decelartion
+  console.log(age);
+  var name = 'mujtaba';
+  let age = 21;
+}
+ptint();
+ ```
+
+ In the above example , name and age are moved to the top once they are declared but point to be noted 
+ `assignment or initialization ` are not moved to the top so accessing them before assignment or initialization it will give error
+ `name` is  not `defined` and `age` will  give `Ref error` (as varible declartion with let and const are not completly hosited)
+
+ #### Using hoisting
+
+  ```javascript
+ function print() {
+     name = 'mujtaba';
+    console.log(name);    // here name is defined  as  var name will be hosited and can be access
+    var name ;
+
+
+    
+}
+ptint();
+ ```
+
+
+</p>
+
+
+
 
 
 
