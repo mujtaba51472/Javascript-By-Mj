@@ -65,7 +65,7 @@ Hoisting in JavaScript is a mechanism where `variable and function declarations`
 
  ```javascript
  function print() {
-  console.log(name);
+  // console.log(name);  //name is not defined cause we cannot used varible before  assignment or initialization   but we can before decelartion
   console.log(age);
   var name = 'mujtaba';
   let age = 21;
