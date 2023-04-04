@@ -1,6 +1,8 @@
 # Define Vs not define Vs  undefined 
 <p>
+
 ## Define
+
 `Defined`: means that a variable or function has been declared and assigned a value. For example:
 </p>
 
@@ -26,16 +28,20 @@ we try to access the declared variable but which is not in the same `scope` wher
 
 
 ```javascript
+
 console.log(z); // Output: Uncaught ReferenceError: z is not defined
 ```
 
 <p>
+
 ## undefined 
+
 `Undefined` means that a variable or property has been declared, but has not been assigned a `value`
 In the Follwowing example , we trying to access the decalred which donot contain value yet
 
 #### Example
 </p>
+
 ```javascript
 var y;
 console.log(y); // Output: undefined
