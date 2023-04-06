@@ -58,6 +58,8 @@ console.log(obj.prop); // Outputs: 'value' , not changed
 */
 
 // the same with array as we did for objects
+
+/*
 const obj = { prop: 'value' };
 
 function modifyObj() {
@@ -68,6 +70,18 @@ function modifyObj() {
 modifyObj();
 
 console.log(obj.prop); // Outputs: 'new value'
+*/
+
+const obj = { prop: 'value' };
+
+function modifyObj(o) {
+ 
+ o= 'new value'  // something different , different varibale and different sope
+}
+
+modifyObj(obj);
+
+console.log(obj.prop)  // value
 
 
 

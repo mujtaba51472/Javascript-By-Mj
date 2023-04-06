@@ -74,6 +74,37 @@ console.log(obj.prop); // Outputs: 'new value'
 
 The same case with array as we did for object
 
+`but check this example`
+
+```javascript
+const obj = { prop: 'value' };
+
+function modifyObj(o) {
+ 
+ o= 'new value'
+}
+
+modifyObj(obj);
+
+console.log(obj.prop); // Outputs: 'value'
+```
+In the last example we assigned or copied new variable to the `o` and didnot copy the original `obj` to the `o` so here the `o` will be different it maybe any primitive or can be object depend on condition but the imp thing is it will have no connection with `obj` original one .So making changing to this will not effect the `obj`
+
+`also check this example`
+
+```javascript
+const obj = { prop: 'value' };
+
+function modifyObj(o) {
+ 
+ o= 'new value'  // it creates a new primitive value (a string) , different variable and different sope , however stil pointing to same ref or memory location means adding property will change the original `obj`
+}
+
+modifyObj(obj);
+
+console.log(obj.prop)  // value
+```
+
 </p>
 
 
