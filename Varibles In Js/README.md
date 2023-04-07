@@ -1,5 +1,71 @@
 
-#  <u>Define Vs not define Vs undefined</u>
+
+# variables 
+
+<p>
+In JavaScript (JS), variables are used to store and manipulate data during runtime. 
+A variable is a named container that holds a value, which can be a number, string, boolean, object, or any other data type
+
+## Declaration of variable
+
+ there are three keywords used to declare a variable — var, let, and const.
+ Declaration of variables means defining varibles with keyword(var , let , const)
+
+ `for example`
+
+```javascript
+ var a ;   variables  declared with var
+ let b ;
+ const c;
+ ```
+
+ `initilazation`
+
+ In JavaScript, initialization refers to the process of assigning an initial value to a variable
+
+```javascript
+ var a = 10 ;
+ let b = 20 ;
+ ```
+
+## var vs let vs const(declaration , initialization , assignment)
+
+`var`  
+can be re-declara , re assign value  , hositing  , scope( only have block scope when used in function  else it has global scope )
+
+`let`
+ cannot be redeclared , re assignment allowed , no hositing , scope(function , block scope , global scope)
+
+ `const`
+  cannot be redeclared , re assignment is not  allowed , no hositing , scope(function , block scope , global scope)
+
+
+
+
+  # Scope in variables
+
+   In JavaScript  the term `scope` refers to the visibility and accessibility of variables, functions, and objects within a particular portion of code during runtime. It determines where variables and functions can be accessed and modified in a JavaScript program.
+
+  ` JavaScript has 3 main types of scope:`
+
+  ## function scope
+
+   variable with var , let and const has function scope , so they are visible only inside the function 
+
+ ##  block scope
+
+ const and let have block scope while var is visible outside even used inside loop
+
+  ##  global scope
+
+ const , var  and let have global  scope , varibles in global scope can be access from anywhere in the code 
+
+
+</p>
+
+---
+
+#  <u>Define Vs not define Vs undefined varibles</u>
 ---
 
 <p>
@@ -84,15 +150,16 @@ ptint();
      name = 'mujtaba';
     console.log(name);    // here name is defined  as  var name will be hosited and can be access
     var name ;
-
-
     
 }
 ptint();
  ```
 
-
 </p>
+---
+---
+
+
 
 
 
