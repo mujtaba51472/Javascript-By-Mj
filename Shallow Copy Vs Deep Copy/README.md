@@ -85,4 +85,19 @@ console.log(obj2.address.city); // Output: 'Los Angeles'
 ```
 ---
 
+`Note`
+
+```javascript
+const obj={
+age:2,
+name:'mujtaba'
+}
+const obj1= obj
+obj1.nam='ali'
+console.log(obj.name)   // ali
+console.log(obj1.name)   // ali
+
+```
+This is example of shallow copy , any changing to copy object(obj1) wiil relfect in obj
+
 </p>
