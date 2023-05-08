@@ -120,11 +120,11 @@ console.log(members)
 
 When you set the person variable to null, you're not actually modifying the person object that was originally created, but only the variable that was pointing to it. The members array still holds a reference to the original person object, so it remains unchanged.
   
+</p>
   
   
 ```
 
-</p>
 
 
 
