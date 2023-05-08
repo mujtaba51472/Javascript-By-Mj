@@ -97,7 +97,7 @@ const obj = { prop: 'value' };
 
 function modifyObj(o) {
  
- o= 'new value'  // it creates a new primitive value (a string) , different variable and different scope , however stil pointing to same ref or memory location means adding property will change the original `obj`
+ o= 'new value'  // it creates a new primitive value (a string) , different variable and different scope , and new variable is assigned so it will not changed original object
 }
 
 modifyObj(obj);
