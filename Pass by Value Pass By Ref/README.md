@@ -103,7 +103,7 @@ function modifyObj(o) {
 modifyObj(obj);
 
 console.log(obj.prop)  // value
-  
+  ```
   
   
   
